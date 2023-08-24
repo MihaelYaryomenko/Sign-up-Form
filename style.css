@@ -4,18 +4,53 @@
   padding: 0;
 }
 
+:root {
+  --background-color: #f9fafb;
+  --form-color: #FFFFFF
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
 #main-container {
+  align-self: center;
+  width: 1030px;
+  display: flex;
+  flex-direction: row
+}
+
+#form-container {
+  background-color: var(--background-color);
+  width: 63%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
 #picture-container {
+  background-position: 80% 20%;
+  background-image: url(https://www.cia-france.com/media/342/nice-ville_1100x700.jpg);
+  background-size: cover;
+  width: 37%;
+  height: 100vh;
   background-color: red;
 }
 
 #text-container {
-  background-color: grey;
+  margin-top: 15%;
+  height: 23%;
 }
 
 form {
-  background-color: yellow;
+  height: 29%;
+  background-color: var(--form-color);
+  box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.1);
+}
+
+button {
+  width: 150px;
+  height: 50px;
 }
