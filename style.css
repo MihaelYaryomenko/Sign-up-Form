@@ -1,0 +1,21 @@
+* {
+  display: flexbox;
+  margin: 0;
+  padding: 0;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+}
+#picture-container {
+  background-color: red;
+}
+
+#text-container {
+  background-color: grey;
+}
+
+form {
+  background-color: yellow;
+}
