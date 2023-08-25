@@ -122,9 +122,8 @@ label {
   padding: 0px 15px 10% 30px;
 }
 
-em:after {
-  content: " ";
-}
+/* span {word-spacing: .22ch} */
+em {margin-right: .22ch}
 
 em {
   display: inline;
