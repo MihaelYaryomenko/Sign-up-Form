@@ -5,20 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <div id="main-container">
-    <div id="picture-container">
-      
+    <div id="picture-container" >
     </div>
-    <div id="form-container">
-        <div id="text-container">
-          <h3>This is not real vacation site! But I can get paid by being a Fronted devoloper and go on vacation without hesitation</h3>
-          <h3></h3>
-        </div>
-        <form action="">
+    <div id="main-form-container">
+      <div id="text-container">
+        <h3>This is not real vacation site! But I can get paid by being a Fronted devoloper and go on vacation without hesitation. Sign up <em>now</em> to get started  </h3>
+        <h3>You <em>know</em> you want to</h3>
+      </div>
+      <div id="middle-container">
+        <h3>Let's do this</h3>
+        <form action="" method="get">
+          <div id="form-container">
+            <section id="left-section">
+              <div class="form-element">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" required>
+              </div>
+              <div class="form-element">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" required>
+              </div>
+              <div class="form-element">
+                <label for="password">PASSWORD</label>
+                <input type="password" minlength="6" id="password" required>
+              </div>
+            </section>
+            <section id="right-section">
+              <div class="form-element">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" required>
+              </div>
+              <div class="form-element">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input type="number" id="phone-number" required>
+              </div>
+              <div class="form-element">
+                <label for="password-confirm">CONFIRM PASSWORD</label>
+                <input type="password" minlength="6" id="password-confirm" required>
+              </div>
+            </section>
+          </div>
+          <button type="submit" onclick="isPasswordValid()">Create Account</button>
         </form>
-        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="https://youtu.be/dQw4w9WgXcQ?si=iBX35KV9I4zRnGY1">Log in</a></p>
+      </div>
     </div>
   </div>
 </body>
